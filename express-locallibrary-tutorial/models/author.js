@@ -21,7 +21,7 @@ AuthorSchema.virtual("name").get(function(){
 //Virtual for author's URL
 
 AuthorSchema.virtual('url').get(function(){
-    return `/catalog/author/${this.id}`;
+    return "/catalog/author/" + this._id;
 })
 
 //Export Model
